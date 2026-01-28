@@ -1,0 +1,247 @@
+<!-- ==========================================
+     PROYECTO: GenerarCertificados
+     Autor: [Nombre del Estudiante]
+     ========================================== -->
+
+<!-- SEPARADOR: Inicio del Proyecto -->
+<section class="proyecto-separador">
+    <div class="proyecto-num">Proyecto 3</div>
+    <h1>Generador de<br>Certificados</h1>
+    <p class="proyecto-autor">Autor: [Nombre del Estudiante]</p>
+</section>
+
+<!-- PORTADA -->
+<section class="portada">
+    <h1>Sistema Web para la Generación Automatizada de Certificados desde Archivos Excel</h1>
+    <p class="subtitle">Proyecto de Desarrollo de Software</p>
+</section>
+
+<!-- EL PROBLEMA -->
+<section>
+    <h2>El Problema</h2>
+    <div class="grid-simple">
+        <div class="item-num">
+            <div class="item-num-titulo">Proceso Manual</div>
+            <div class="item-num-texto">Crear certificados uno por uno en Word/PDF requiere horas de trabajo repetitivo.</div>
+        </div>
+        <div class="item-num">
+            <div class="item-num-titulo">Errores de Transcripción</div>
+            <div class="item-num-texto">Copiar nombres manualmente genera errores tipográficos y omisiones.</div>
+        </div>
+        <div class="item-num">
+            <div class="item-num-titulo">Inconsistencia</div>
+            <div class="item-num-texto">Diferentes formatos, fuentes y posiciones en cada certificado generado.</div>
+        </div>
+        <div class="item-num">
+            <div class="item-num-titulo">Escalabilidad</div>
+            <div class="item-num-texto">Cursos con 100+ participantes hacen el proceso manual insostenible.</div>
+        </div>
+    </div>
+</section>
+
+<!-- LA SOLUCIÓN -->
+<section>
+    <h2>La Solución</h2>
+    <div class="destacado-central">
+        <p>Aplicación web que genera certificados en lote desde archivos Excel, con detección inteligente de datos y plantillas personalizables.</p>
+    </div>
+    <div class="grid-simple" style="margin-top: 1.5em;">
+        <div>
+            <h3>Características</h3>
+            <ul>
+                <li>Detección automática de columnas</li>
+                <li>Plantillas PDF personalizables</li>
+                <li>Vista previa antes de generar</li>
+                <li>Descarga masiva en ZIP</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Tecnologías</h3>
+            <ul>
+                <li><strong>Backend:</strong> Flask (Python)</li>
+                <li><strong>Excel:</strong> Pandas + OpenPyXL</li>
+                <li><strong>PDF:</strong> ReportLab + PyPDF2</li>
+                <li><strong>Deploy:</strong> Docker</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- FLUJO DE TRABAJO -->
+<section>
+    <h2>Flujo de Trabajo</h2>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2em;">
+        <div style="text-align: center; flex: 1;">
+            <div style="background: #f5f5f5; padding: 1em; border-radius: 4px; border-top: 3px solid #333;">
+                <p style="font-size: 0.7em; font-weight: 600; margin: 0;">1. Subir Excel</p>
+                <p style="font-size: 0.5em; color: #666; margin: 0.5em 0 0 0;">Lista de participantes</p>
+            </div>
+        </div>
+        <div style="font-size: 1.5em; color: #333;">→</div>
+        <div style="text-align: center; flex: 1;">
+            <div style="background: #f5f5f5; padding: 1em; border-radius: 4px; border-top: 3px solid #333;">
+                <p style="font-size: 0.7em; font-weight: 600; margin: 0;">2. Detección</p>
+                <p style="font-size: 0.5em; color: #666; margin: 0.5em 0 0 0;">Columnas automáticas</p>
+            </div>
+        </div>
+        <div style="font-size: 1.5em; color: #333;">→</div>
+        <div style="text-align: center; flex: 1;">
+            <div style="background: #f5f5f5; padding: 1em; border-radius: 4px; border-top: 3px solid #333;">
+                <p style="font-size: 0.7em; font-weight: 600; margin: 0;">3. Personalizar</p>
+                <p style="font-size: 0.5em; color: #666; margin: 0.5em 0 0 0;">Plantilla, fuente, posición</p>
+            </div>
+        </div>
+        <div style="font-size: 1.5em; color: #333;">→</div>
+        <div style="text-align: center; flex: 1;">
+            <div style="background: #f5f5f5; padding: 1em; border-radius: 4px; border-top: 3px solid #333;">
+                <p style="font-size: 0.7em; font-weight: 600; margin: 0;">4. Preview</p>
+                <p style="font-size: 0.5em; color: #666; margin: 0.5em 0 0 0;">Verificar resultado</p>
+            </div>
+        </div>
+        <div style="font-size: 1.5em; color: #333;">→</div>
+        <div style="text-align: center; flex: 1;">
+            <div style="background: #f5f5f5; padding: 1em; border-radius: 4px; border-top: 3px solid #333;">
+                <p style="font-size: 0.7em; font-weight: 600; margin: 0;">5. Generar</p>
+                <p style="font-size: 0.5em; color: #666; margin: 0.5em 0 0 0;">Descarga ZIP</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ARQUITECTURA -->
+<section>
+    <h2>Arquitectura del Sistema</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5em; margin-top: 1.5em;">
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.3em 0; color: #333;">Backend</h3>
+            <p style="font-size: 0.9em; font-weight: 600; margin: 0 0 0.8em 0; color: #333;">Flask + Python</p>
+            <ul style="font-size: 0.5em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>Factory Pattern</li>
+                <li>Blueprints modulares</li>
+                <li>Capa de servicios</li>
+                <li>API REST endpoints</li>
+            </ul>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.3em 0; color: #333;">Procesamiento</h3>
+            <p style="font-size: 0.9em; font-weight: 600; margin: 0 0 0.8em 0; color: #333;">Pandas + ReportLab</p>
+            <ul style="font-size: 0.5em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>Lectura Excel inteligente</li>
+                <li>Detección de encabezados</li>
+                <li>Generación PDF vectorial</li>
+                <li>Merge con plantillas</li>
+            </ul>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.3em 0; color: #333;">Frontend</h3>
+            <p style="font-size: 0.9em; font-weight: 600; margin: 0 0 0.8em 0; color: #333;">HTML/CSS/JS</p>
+            <ul style="font-size: 0.5em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>Interfaz responsiva</li>
+                <li>Tema claro/oscuro</li>
+                <li>Preview en tiempo real</li>
+                <li>Controles de ajuste fino</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- DETECCIÓN INTELIGENTE -->
+<section>
+    <h2>Detección Inteligente de Excel</h2>
+    <div class="tabla-2col">
+        <div class="tabla-row">
+            <div class="tabla-cell tabla-cell-left">
+                <h3>Análisis Automático</h3>
+                <ul style="font-size: 0.55em;">
+                    <li>Detecta fila de encabezados</li>
+                    <li>Identifica columna de nombres</li>
+                    <li>Identifica columna de CI/ID</li>
+                    <li>Limpia datos vacíos</li>
+                </ul>
+            </div>
+            <div class="tabla-cell">
+                <h3>Palabras Clave Buscadas</h3>
+                <ul style="font-size: 0.55em;">
+                    <li><strong>Nombres:</strong> nombre, participante, estudiante, alumno</li>
+                    <li><strong>ID:</strong> ci, cédula, carnet, documento</li>
+                    <li>Análisis de longitud y unicidad</li>
+                    <li>Detección de patrones numéricos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FUNCIONALIDADES DESTACADAS -->
+<section>
+    <h2>Funcionalidades Destacadas</h2>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5em; margin-top: 1.5em;">
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">Plantillas PDF</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Sube tu diseño de certificado como PDF y el sistema superpone los nombres en la posición exacta que configures.</p>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">Fuentes Personalizadas</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">12+ fuentes incluidas (Helvetica, Times, Courier) más soporte para cargar fuentes TTF/OTF propias.</p>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">Vista Previa</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Genera un certificado de muestra con el primer registro para verificar posición, tamaño y estilo antes de procesar todo.</p>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">Generación Masiva</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Procesa cientos de certificados y los comprime en un único archivo ZIP para descarga inmediata.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ESTRUCTURA DEL PROYECTO -->
+<section>
+    <h2>Estructura del Proyecto</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2em; margin-top: 1em;">
+        <div>
+            <h3 style="font-size: 0.7em; color: #333;">Organización Modular</h3>
+            <pre style="font-size: 0.45em; background: #f5f5f5; padding: 1em; border-radius: 4px; margin: 0.5em 0;">
+app/
+├── __init__.py      # Factory Pattern
+├── config.py        # Configuración
+├── routes/          # Blueprints
+│   ├── upload.py
+│   ├── certificate.py
+│   └── color.py
+├── services/        # Lógica de negocio
+│   ├── excel_service.py
+│   ├── pdf_service.py
+│   └── font_service.py
+└── templates/
+    └── index.html</pre>
+        </div>
+        <div>
+            <h3 style="font-size: 0.7em; color: #333;">Endpoints API</h3>
+            <ul style="font-size: 0.5em; margin-top: 0.5em;">
+                <li><strong>POST /upload_excel</strong> - Subir archivo Excel</li>
+                <li><strong>POST /upload_template</strong> - Subir plantilla PDF</li>
+                <li><strong>POST /upload_font</strong> - Subir fuente TTF</li>
+                <li><strong>POST /certificate/preview</strong> - Generar vista previa</li>
+                <li><strong>POST /certificate/generate</strong> - Generar todos</li>
+                <li><strong>GET /certificate/download</strong> - Descargar ZIP</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- DEMO / CAPTURAS -->
+<section>
+    <h2>Demostración</h2>
+    <div class="destacado-central">
+        <p>Demo en vivo del sistema</p>
+    </div>
+    <div class="grid-simple" style="margin-top: 1em;">
+        <div style="text-align: center;">
+            <p style="font-size: 0.6em; color: #666;">Interfaz Principal</p>
+        </div>
+        <div style="text-align: center;">
+            <p style="font-size: 0.6em; color: #666;">Certificado Generado</p>
+        </div>
+    </div>
+</section>

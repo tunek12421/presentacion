@@ -1,0 +1,206 @@
+<!-- ==========================================
+     PROYECTO: AcademyUpds - Plataforma de Cursos
+     Autor: [Nombre del Estudiante]
+     ========================================== -->
+
+<!-- SEPARADOR: Inicio del Proyecto -->
+<section class="proyecto-separador">
+    <div class="proyecto-num">Proyecto 2</div>
+    <h1>AcademyUpds<br>Plataforma de Cursos</h1>
+    <p class="proyecto-autor">Autor: [Nombre del Estudiante]</p>
+</section>
+
+<!-- PORTADA -->
+<section class="portada">
+    <h1>Plataforma Web para la Gestión y Difusión de Cursos de Formación Continua</h1>
+    <p class="subtitle">Proyecto de Desarrollo de Software</p>
+</section>
+
+<!-- EL PROBLEMA -->
+<section>
+    <h2>El Problema</h2>
+    <div class="grid-simple">
+        <div class="item-num">
+            <div class="item-num-titulo">Información Dispersa</div>
+            <div class="item-num-texto">Los cursos de formación se promocionan por canales separados sin un punto centralizado.</div>
+        </div>
+        <div class="item-num">
+            <div class="item-num-titulo">Difícil Acceso</div>
+            <div class="item-num-texto">Los estudiantes no encuentran fácilmente información detallada sobre cursos disponibles.</div>
+        </div>
+        <div class="item-num">
+            <div class="item-num-titulo">Sin Organización</div>
+            <div class="item-num-texto">No existe categorización por facultades ni filtrado por áreas de conocimiento.</div>
+        </div>
+        <div class="item-num">
+            <div class="item-num-titulo">Experiencia Limitada</div>
+            <div class="item-num-texto">La información de cursos no incluye detalles como módulos, instructores ni prerequisitos.</div>
+        </div>
+    </div>
+</section>
+
+<!-- LA SOLUCIÓN -->
+<section>
+    <h2>La Solución</h2>
+    <div class="destacado-central">
+        <p>Plataforma web tipo catálogo que centraliza y organiza los cursos de formación continua por facultades y academias.</p>
+    </div>
+    <div class="grid-simple" style="margin-top: 1.5em;">
+        <div>
+            <h3>Características</h3>
+            <ul>
+                <li>Catálogo organizado por facultades</li>
+                <li>Fichas detalladas de cada curso</li>
+                <li>Información de instructores</li>
+                <li>Módulos, prerequisitos y FAQs</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Tecnologías</h3>
+            <ul>
+                <li><strong>Build Tool:</strong> Vite</li>
+                <li><strong>Frontend:</strong> JavaScript (SPA)</li>
+                <li><strong>Estilos:</strong> Tailwind CSS</li>
+                <li><strong>Deploy:</strong> Vercel</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- FACULTADES Y CATEGORÍAS -->
+<section>
+    <h2>Organización de Cursos</h2>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5em; margin-top: 1.5em;">
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.8em; margin: 0 0 0.8em 0; color: #333;">Por Facultades</h3>
+            <ul style="font-size: 0.55em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>Ciencias de la Salud</li>
+                <li>Ingeniería</li>
+                <li>Ciencias Empresariales</li>
+                <li>Ciencias Jurídicas</li>
+            </ul>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.8em; margin: 0 0 0.8em 0; color: #333;">Por Academias</h3>
+            <ul style="font-size: 0.55em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>Academia MikroTik (Certificación MTCNA)</li>
+                <li>Cursos especializados por área</li>
+                <li>Programas de formación continua</li>
+            </ul>
+        </div>
+    </div>
+    <div style="margin-top: 1.5em;">
+        <h3 style="font-size: 0.75em; color: #333;">Cursos Disponibles</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5em; margin-top: 0.5em;">
+            <span style="background: #f5f5f5; padding: 0.3em 0.6em; border-radius: 3px; font-size: 0.5em;">MikroTik MTCNA</span>
+            <span style="background: #f5f5f5; padding: 0.3em 0.6em; border-radius: 3px; font-size: 0.5em;">Primeros Auxilios</span>
+            <span style="background: #f5f5f5; padding: 0.3em 0.6em; border-radius: 3px; font-size: 0.5em;">Excel Experto</span>
+            <span style="background: #f5f5f5; padding: 0.3em 0.6em; border-radius: 3px; font-size: 0.5em;">Tributación Aplicada</span>
+            <span style="background: #f5f5f5; padding: 0.3em 0.6em; border-radius: 3px; font-size: 0.5em;">Litigación</span>
+            <span style="background: #f5f5f5; padding: 0.3em 0.6em; border-radius: 3px; font-size: 0.5em;">Manejo de Cadáveres</span>
+        </div>
+    </div>
+</section>
+
+<!-- ARQUITECTURA -->
+<section>
+    <h2>Arquitectura del Sistema</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5em; margin-top: 1.5em;">
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.3em 0; color: #333;">Frontend</h3>
+            <p style="font-size: 0.9em; font-weight: 600; margin: 0 0 0.8em 0; color: #333;">Vanilla JS + Vite</p>
+            <ul style="font-size: 0.5em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>SPA con routing cliente</li>
+                <li>Componentes modulares</li>
+                <li>Carga dinámica de contenido</li>
+                <li>Sin frameworks pesados</li>
+            </ul>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.3em 0; color: #333;">Estilos</h3>
+            <p style="font-size: 0.9em; font-weight: 600; margin: 0 0 0.8em 0; color: #333;">Tailwind CSS</p>
+            <ul style="font-size: 0.5em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>Utility-first CSS</li>
+                <li>Diseño responsive</li>
+                <li>Tema personalizado UPDS</li>
+                <li>FontAwesome iconos</li>
+            </ul>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.3em 0; color: #333;">Infraestructura</h3>
+            <p style="font-size: 0.9em; font-weight: 600; margin: 0 0 0.8em 0; color: #333;">Vercel</p>
+            <ul style="font-size: 0.5em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>Deploy automático</li>
+                <li>CDN global</li>
+                <li>SSL/HTTPS incluido</li>
+                <li>Optimización de assets</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ESTRUCTURA DEL CÓDIGO -->
+<section>
+    <h2>Estructura del Proyecto</h2>
+    <div class="tabla-2col">
+        <div class="tabla-row">
+            <div class="tabla-cell tabla-cell-left">
+                <h3>Módulos JavaScript</h3>
+                <ul style="font-size: 0.55em;">
+                    <li><strong>router.js</strong> - Motor de rutas SPA</li>
+                    <li><strong>data.js</strong> - Datos de cursos y estado</li>
+                    <li><strong>components.js</strong> - UI reutilizable</li>
+                    <li><strong>app.js</strong> - Lógica de renderizado</li>
+                </ul>
+            </div>
+            <div class="tabla-cell">
+                <h3>Rutas Disponibles</h3>
+                <ul style="font-size: 0.55em;">
+                    <li><strong>/</strong> - Página principal</li>
+                    <li><strong>/facultad/:nombre</strong> - Cursos por facultad</li>
+                    <li><strong>/academia/:nombre</strong> - Cursos por academia</li>
+                    <li><strong>/curso/:id</strong> - Detalle del curso</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FUNCIONALIDADES DESTACADAS -->
+<section>
+    <h2>Funcionalidades Destacadas</h2>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5em; margin-top: 1.5em;">
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">SPA Sin Recargas</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Navegación fluida sin recargar la página. Router personalizado que maneja todas las rutas del lado del cliente.</p>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">Fichas de Curso Completas</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Cada curso muestra instructor, biografía, módulos, duración, prerequisitos, FAQs y habilidades a desarrollar.</p>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">Diseño Responsive</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Interfaz adaptable a móviles, tablets y escritorio. Menú hamburguesa para dispositivos pequeños.</p>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">Carga Optimizada</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Skeleton loaders durante la carga, lazy loading de imágenes y assets optimizados con Vite.</p>
+        </div>
+    </div>
+</section>
+
+<!-- DEMO / CAPTURAS -->
+<section>
+    <h2>Demostración</h2>
+    <div class="destacado-central">
+        <p>Demo en vivo del sistema</p>
+    </div>
+    <div class="grid-simple" style="margin-top: 1em;">
+        <div style="text-align: center;">
+            <p style="font-size: 0.6em; color: #666;">Página Principal</p>
+        </div>
+        <div style="text-align: center;">
+            <p style="font-size: 0.6em; color: #666;">Detalle de Curso</p>
+        </div>
+    </div>
+</section>
