@@ -2,447 +2,83 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Presentación</title>
+    <title>Presentaciones - Desarrollo de Software</title>
     <link rel="stylesheet" href="dist/reset.css">
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/white.css">
-    <style>
-        body {
-            background: #2c2c2c;
-        }
-        .reveal {
-            font-family: 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
-            font-size: 32px;
-        }
-        .reveal .slides {
-            text-align: left;
-        }
-
-        /* Tipografía base */
-        .reveal h1 {
-            color: #2c5aa0;
-            font-size: 2em;
-            font-weight: 600;
-            margin-bottom: 0.5em;
-            text-transform: none;
-        }
-        .reveal h2 {
-            color: #2c5aa0;
-            font-size: 1.5em;
-            font-weight: 600;
-            margin-bottom: 0.5em;
-            margin-top: 0.8em;
-            text-transform: none;
-        }
-        .reveal h3 {
-            color: #444;
-            font-size: 1.1em;
-            font-weight: 600;
-            margin-bottom: 0.3em;
-            margin-top: 0.5em;
-        }
-        .reveal p {
-            font-size: 0.65em;
-            line-height: 1.6;
-            margin-bottom: 0.7em;
-            color: #333;
-        }
-        .reveal li {
-            font-size: 0.65em;
-            line-height: 1.5;
-            margin-bottom: 0.4em;
-            color: #333;
-        }
-        .reveal strong {
-            color: #2c5aa0;
-            font-weight: 600;
-        }
-
-        /* Portada */
-        .portada {
-            background: white;
-            border-top: 12px solid #2c5aa0;
-        }
-        .portada h1 {
-            color: #2c5aa0;
-            font-size: 1.8em;
-            line-height: 1.3;
-            margin-bottom: 0.8em;
-        }
-        .portada .subtitle {
-            font-size: 0.8em;
-            color: #666;
-            margin-bottom: 1.5em;
-        }
-        .portada .info {
-            margin-top: 2em;
-            padding-top: 1em;
-            border-top: 3px solid #e0e0e0;
-        }
-        .portada .info p {
-            font-size: 0.5em;
-            color: #555;
-            margin-bottom: 0.3em;
-        }
-
-        /* Slide con header */
-        .slide-header {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 80px;
-            background: #2c5aa0;
-        }
-        .slide-with-header {
-            padding-top: 100px !important;
-        }
-        .slide-with-header h2 {
-            position: absolute;
-            top: 20px;
-            left: 60px;
-            color: white;
-            margin: 0;
-        }
-
-        /* Secciones */
-        .seccion {
-            margin-bottom: 1.5em;
-        }
-        .seccion-titulo {
-            color: #2c5aa0;
-            font-size: 0.75em;
-            font-weight: 600;
-            margin-bottom: 0.5em;
-            padding-bottom: 0.2em;
-            border-bottom: 2px solid #2c5aa0;
-            display: inline-block;
-        }
-
-        /* Tabla simple */
-        .tabla-2col {
-            display: table;
-            width: 100%;
-            margin: 1em 0;
-        }
-        .tabla-row {
-            display: table-row;
-        }
-        .tabla-cell {
-            display: table-cell;
-            width: 50%;
-            padding: 1em;
-            vertical-align: top;
-        }
-        .tabla-cell-left {
-            border-right: 3px solid #e0e0e0;
-        }
-
-        /* Items numerados */
-        .item-num {
-            margin-bottom: 1.5em;
-        }
-        .item-num-titulo {
-            color: #2c5aa0;
-            font-size: 0.7em;
-            font-weight: 600;
-            margin-bottom: 0.3em;
-        }
-        .item-num-texto {
-            font-size: 0.6em;
-            line-height: 1.5;
-            color: #444;
-        }
-
-        /* Destacado central */
-        .destacado-central {
-            text-align: center;
-            padding: 2em;
-            margin: 2em 0;
-            background: #f8f9fa;
-            border-left: 8px solid #2c5aa0;
-        }
-        .destacado-central p {
-            font-size: 0.75em;
-            font-weight: 600;
-            color: #2c5aa0;
-            line-height: 1.5;
-            text-align: center;
-        }
-
-        /* Grid simple */
-        .grid-simple {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2em;
-            margin: 1em 0;
-        }
-
-        /* Footer slide */
-        .slide-footer {
-            position: absolute;
-            bottom: 20px;
-            right: 60px;
-            font-size: 0.4em;
-            color: #999;
-        }
-
-        /* Número de slide */
-        .slide-num {
-            position: absolute;
-            top: 20px;
-            right: 60px;
-            font-size: 0.5em;
-            color: #999;
-        }
-    </style>
+    <link rel="stylesheet" href="css/theme.css">
 </head>
 <body>
     <div class="reveal">
-        <div class="slides">
-
-            <!-- SLIDE 1: PORTADA -->
-            <section class="portada">
-                <h1>Sistema Web para Mejorar la Eficiencia en la Gestión del Préstamo de Llaves y Registro de Acceso Docente</h1>
-                <p class="subtitle">Proyecto de Desarrollo de Software</p>
-                <div class="info">
-                    <p><strong>Autor:</strong> Lujan Arispe Enrique</p>
-                    <p><strong>Tutor:</strong> Ing. Juan Pablo Vicente Yugar</p>
-                    <p><strong>Institución:</strong> Universidad Privada Domingo Savio (UPDS)</p>
-                    <p><strong>Ubicación:</strong> Cochabamba – Bolivia</p>
-                    <p><strong>Gestión:</strong> 2025</p>
-                </div>
-            </section>
-
-            <!-- SLIDE 2: ANTECEDENTES -->
+        <div class="slides" id="slides-container">
+            <!-- Los slides se cargan dinámicamente -->
             <section>
-                <h2>Antecedentes</h2>
-                <p>En el ámbito de la administración universitaria contemporánea, la automatización se ha consolidado como un indicador de madurez institucional. La literatura especializada sugiere que los métodos tradicionales de registro ya no responden a la dinámica actual de los campus universitarios.</p>
-                <p>Históricamente, el uso de hojas de cálculo desconectadas ha sido una práctica común para el registro de préstamos, pero conlleva riesgos significativos. Según Oracle (2023), aunque las hojas de cálculo son herramientas flexibles, su uso para la gestión de datos compartidos crea <strong>"silos de información"</strong> que carecen de integridad, seguridad y auditoría, lo cual resulta inadecuado para la gestión de activos institucionales donde la trazabilidad es obligatoria.</p>
-                <p>Actualmente, la gestión del préstamo de llaves y el control de acceso docente en la institución dependen de procesos manuales soportados por herramientas ofimáticas básicas, careciendo de validación automática de turnos y de una segmentación de roles de seguridad.</p>
+                <h2>Cargando presentación...</h2>
             </section>
-
-            <!-- SLIDE 3: PLANTEAMIENTO DEL PROBLEMA -->
-            <section>
-                <h2>Planteamiento del Problema</h2>
-                <p>La gestión actual, sustentada en herramientas no transaccionales, presenta una ineficiencia estructural que compromete la operatividad diaria debido a la lentitud en la recuperación y procesamiento de la información.</p>
-
-                <div class="grid-simple">
-                    <div class="item-num">
-                        <div class="item-num-titulo">1. Ineficacia Manual</div>
-                        <div class="item-num-texto">Según Parchment (2024), la gestión basada en procesos manuales consume tiempo excesivo del personal y aumenta el riesgo de pérdida de archivos físicos críticos.</div>
-                    </div>
-                    <div class="item-num">
-                        <div class="item-num-titulo">2. Error Humano</div>
-                        <div class="item-num-texto">Según DocuClipper (2025), la precisión promedio en entrada manual oscila entre 96-99%, vs. 99.9% de sistemas automatizados.</div>
-                    </div>
-                    <div class="item-num">
-                        <div class="item-num-titulo">3. Sin Control RBAC</div>
-                        <div class="item-num-texto">Según IBM, la implementación de Control de Acceso Basado en Roles (RBAC) es vital, algo inexistente en el modelo actual.</div>
-                    </div>
-                    <div class="item-num">
-                        <div class="item-num-titulo">4. Sin Auditoría</div>
-                        <div class="item-num-texto">Según NIST (1997), el mantenimiento de registros de auditoría es fundamental para responsabilidad individual, capacidad de la que carece el sistema vigente.</div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SLIDE 4: ÁRBOL DE PROBLEMAS -->
-            <section>
-                <h2>Situación Problemática (Árbol de Problemas)</h2>
-                <div class="seccion">
-                    <div class="seccion-titulo">Problema Central</div>
-                    <p>Ineficiencia en la gestión del préstamo de llaves y registro de acceso docente</p>
-                </div>
-
-                <div class="tabla-2col">
-                    <div class="tabla-row">
-                        <div class="tabla-cell tabla-cell-left">
-                            <h3>Causas</h3>
-                            <ul>
-                                <li>Uso de herramientas ofimáticas no especializadas</li>
-                                <li>Entrada manual de datos sin validación</li>
-                                <li>Ausencia de control de acceso por roles</li>
-                                <li>Inexistencia de trazabilidad de transacciones</li>
-                            </ul>
-                        </div>
-                        <div class="tabla-cell">
-                            <h3>Efectos</h3>
-                            <ul>
-                                <li>Inconsistencia de datos y registros</li>
-                                <li>Saturación operativa en horarios pico</li>
-                                <li>Vulnerabilidad crítica de la información</li>
-                                <li>Incertidumbre en la auditoría de activos</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SLIDE 4.5: DIAGRAMA ÁRBOL DE PROBLEMAS -->
-            <section>
-                <h2>Diagrama del Árbol de Problemas</h2>
-                <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
-                    <img src="nLQzRXD14ExlAKQXWI9I2AaeKAoG85SW4g2vPhmtjaVPcptjZuE3A7WKojGyWb-CsJt_9CGTJjpTUNVd-vblntSQ8lgOMWkBNtxaB3G4dxmRMMenm25SSeZwc7yUoiHJSF3U6P98yF8h-S2BFm8VI1PtdWs-ggfmpTAXnrQFZ37PU4NVuy3oH5ez1UMelxVhncFtZPiuXUEZewhoP2BAn18Sd5-SdrrzXDTlQnaOeyW1n06cw3pVOkD2BQ.png" alt="Árbol de Problemas" style="max-width: 90%; max-height: 500px; object-fit: contain;">
-                </div>
-            </section>
-
-            <!-- SLIDE 5: PREGUNTA DE INVESTIGACIÓN -->
-            <section>
-                <h2>Pregunta de Investigación</h2>
-                <div class="destacado-central">
-                    <p>¿De qué manera el desarrollo de un sistema web mejora la eficiencia en la gestión del préstamo de llaves, así como en el registro de acceso docente en instituciones educativas durante la gestión 2025?</p>
-                </div>
-            </section>
-
-            <!-- SLIDE 6: OBJETIVO GENERAL -->
-            <section>
-                <h2>Objetivo General</h2>
-                <div class="destacado-central">
-                    <p>Desarrollar un sistema web para mejorar la eficiencia en la gestión del préstamo de llaves y registro de acceso docente en instituciones educativas.</p>
-                </div>
-            </section>
-
-            <!-- SLIDE 7: OBJETIVOS ESPECÍFICOS (1/2) -->
-            <section>
-                <h2>Objetivos Específicos</h2>
-                <ol>
-                    <li><strong>Diagnosticar</strong> el proceso actual de registro y control de acceso basado en hojas de cálculo para identificar inconsistencias de datos, errores de transcripción y riesgos de manipulación de la información mediante la revisión documental de los archivos históricos y la observación del flujo operativo manual.</li>
-                    <li><strong>Diseñar</strong> la arquitectura de software y el modelo de base de datos relacional para la migración de datos no estructurados a un esquema seguro que garantice la integridad referencial y soporte roles de usuario utilizando diagramas UML y patrones de Arquitectura Limpia (Clean Architecture).</li>
-                </ol>
-            </section>
-
-            <!-- SLIDE 8: OBJETIVOS ESPECÍFICOS (2/2) -->
-            <section>
-                <h2>Objetivos Específicos (continuación)</h2>
-                <ol start="3">
-                    <li><strong>Implementar</strong> los módulos de gestión de usuarios, préstamos y detección automática de turnos para la automatización del flujo de trabajo en tiempo real empleando el framework Angular, el lenguaje de programación Go y el motor de base de datos PostgreSQL.</li>
-                    <li><strong>Validar</strong> la integridad de los datos, la gestión de zonas horarias y la seguridad del control de acceso para garantizar la fiabilidad operativa del sistema a través de la ejecución de pruebas de caja negra y pruebas de estrés en un entorno contenerizado.</li>
-                </ol>
-            </section>
-
-            <!-- SLIDE 9: VARIABLES -->
-            <section>
-                <h2>Variables de Investigación</h2>
-                <div class="seccion">
-                    <div class="seccion-titulo">Variable Independiente</div>
-                    <h3>Desarrollo de un sistema web</h3>
-                    <p>Plataforma tecnológica basada en arquitectura cliente-servidor diseñada para automatizar el procesamiento de datos y control de flujos de trabajo específicos mediante interfaces web.</p>
-                </div>
-                <div class="seccion">
-                    <div class="seccion-titulo">Variable Dependiente</div>
-                    <h3>Eficiencia en la gestión</h3>
-                    <p>Capacidad de realizar el proceso de asignación y devolución de activos logrando el objetivo con la mínima cantidad de recursos (tiempo y esfuerzo) y sin errores.</p>
-                </div>
-            </section>
-
-            <!-- SLIDE 10: DELIMITACIÓN -->
-            <section>
-                <h2>Delimitación</h2>
-                <div class="seccion">
-                    <div class="seccion-titulo">Límite Temporal</div>
-                    <p>El desarrollo e implementación del proyecto se ha planificado para una ejecución intensiva de dos (2) meses durante la gestión académica 2025. Este periodo abarca desde el levantamiento de requisitos inicial hasta la validación y entrega final del producto software funcional.</p>
-                </div>
-                <div class="seccion">
-                    <div class="seccion-titulo">Límite Geográfico</div>
-                    <p>El proyecto se circunscribe a las instalaciones de la Universidad Privada Domingo Savio (UPDS) sede Cochabamba, específicamente en las unidades de Biblioteca y Jefatura de Carrera, donde se centralizan las operaciones de control de acceso docente.</p>
-                </div>
-            </section>
-
-            <!-- SLIDE 11: JUSTIFICACIÓN TÉCNICA Y ECONÓMICA -->
-            <section>
-                <h2>Justificación</h2>
-                <div class="seccion">
-                    <div class="seccion-titulo">Justificación Técnica</div>
-                    <p>La construcción del sistema se fundamenta en el uso de tecnologías modernas. La elección de Go (Golang) para el backend asegura un alto rendimiento en concurrencia con bajo consumo de recursos, mientras que Angular proporciona una interfaz de usuario reactiva. La implementación de una Arquitectura Limpia permite desacoplar la lógica de negocio de la infraestructura, facilitando el mantenimiento futuro.</p>
-                </div>
-                <div class="seccion">
-                    <div class="seccion-titulo">Justificación Económica</div>
-                    <p>El proyecto presenta una viabilidad económica significativa al basarse en tecnologías de Código Abierto (Open Source), lo que elimina la necesidad de adquirir costosas licencias de software propietario. Asimismo, la automatización reduce las horas-hombre dedicadas a la corrección de errores manuales.</p>
-                </div>
-            </section>
-
-            <!-- SLIDE 12: JUSTIFICACIÓN SOCIAL -->
-            <section>
-                <h2>Justificación Social</h2>
-                <p>Desde una perspectiva social e institucional, el sistema mejora la calidad de vida laboral de los docentes y el personal administrativo al reducir los tiempos de espera y eliminar la fricción operativa en los cambios de turno.</p>
-                <p>Al garantizar la transparencia y la trazabilidad de la información, se fomenta un ambiente de confianza y profesionalismo dentro de la comunidad educativa, proyectando una imagen de modernización y eficiencia institucional.</p>
-            </section>
-
-            <!-- SLIDE 13: METODOLOGÍA -->
-            <section>
-                <h2>Metodología</h2>
-                <div class="seccion">
-                    <div class="seccion-titulo">Tipología de Proyecto</div>
-                    <p>Se clasifica como un <strong>Proyecto de Inversión Tecnológica</strong> o Proyecto Factible, dado que culmina en la creación de un producto tangible (software). Según su naturaleza, corresponde a un Proyecto de Desarrollo de Software.</p>
-                </div>
-                <div class="seccion">
-                    <div class="seccion-titulo">Tipo de Investigación</div>
-                    <p><strong>Investigación Aplicada</strong>, ya que utiliza conocimientos teóricos de la Ingeniería de Software para solucionar un problema práctico. Según el nivel de profundidad, es Descriptiva y Propositiva.</p>
-                </div>
-                <div class="seccion">
-                    <div class="seccion-titulo">Diseño</div>
-                    <p><strong>No Experimental</strong>, dado que no se manipulan variables en un laboratorio, sino que se observa el fenómeno en su contexto natural.</p>
-                </div>
-            </section>
-
-            <!-- SLIDE 14: POBLACIÓN Y MUESTRA -->
-            <section>
-                <h2>Población y Muestra</h2>
-                <p>Debido a que el sistema es de uso interno y especializado, se trabajará con un <strong>Censo Poblacional</strong> en lugar de una muestra, abarcando la totalidad de los actores involucrados.</p>
-
-                <div class="tabla-2col" style="margin-top: 1.5em;">
-                    <div class="tabla-row">
-                        <div class="tabla-cell tabla-cell-left">
-                            <div class="seccion-titulo">Población Administrativa</div>
-                            <p>100% del personal de Biblioteca y Jefes de Carrera encargados del control de acceso.</p>
-                        </div>
-                        <div class="tabla-cell">
-                            <div class="seccion-titulo">Población Docente</div>
-                            <p>Se considerará la totalidad del plantel docente activo en la sede Cochabamba para las pruebas de carga y validación de tiempos de atención.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- SLIDE 15: PLANIFICACIÓN Y PRESUPUESTO -->
-            <section>
-                <h2>Planificación del Proyecto</h2>
-                <p>Se ha estructurado el plan de trabajo en una duración intensiva de <strong>8 semanas (2 meses)</strong>.</p>
-
-                <div class="seccion">
-                    <div class="seccion-titulo">Presupuesto Estimado</div>
-                    <ul style="font-size: 0.7em; margin-top: 0.5em;">
-                        <li>Servicios de Hosting (VPS): <strong>140.00 Bs</strong></li>
-                        <li>Dominio Web (.com/.bo): <strong>100.00 Bs</strong></li>
-                        <li>Material de Escritorio: <strong>150.00 Bs</strong></li>
-                        <li>Internet y Servicios Básicos: <strong>300.00 Bs</strong></li>
-                        <li>Imprevistos (10%): <strong>69.00 Bs</strong></li>
-                    </ul>
-                </div>
-
-                <div style="margin-top: 2em; padding: 1em; background: #f8f9fa; text-align: center; border-top: 8px solid #2c5aa0;">
-                    <h2 style="font-size: 2.5em; color: #2c5aa0; margin: 0;">759 Bs</h2>
-                    <p style="font-size: 0.7em; color: #666; margin: 0.5em 0 0 0;">Presupuesto Total</p>
-                </div>
-            </section>
-
         </div>
     </div>
 
     <script src="dist/reveal.js"></script>
     <script>
-        Reveal.initialize({
-            width: 1280,
-            height: 720,
-            margin: 0.1,
-            controls: true,
-            progress: true,
-            slideNumber: true,
-            hash: true,
-            center: true,
-            transition: 'slide'
-        });
+        // Archivos de slides a cargar (agregar más aquí)
+        const slidesFiles = [
+            'slides/proyecto-llaves.html',
+            // 'slides/proyecto-2.html',
+            // 'slides/proyecto-3.html',
+            // 'slides/proyecto-4.html',
+        ];
+
+        // Portada general
+        const portadaGeneral = `
+            <section class="proyecto-separador">
+                <div class="proyecto-num">Universidad Privada Domingo Savio - UPDS</div>
+                <h1>Proyectos de<br>Desarrollo de Software</h1>
+                <p class="proyecto-autor">Gestión 2025 - Cochabamba, Bolivia</p>
+            </section>
+        `;
+
+        // Cierre
+        const cierre = `
+            <section class="proyecto-separador">
+                <h1>Gracias</h1>
+                <p class="proyecto-autor">Preguntas y Comentarios</p>
+            </section>
+        `;
+
+        async function loadSlides() {
+            const container = document.getElementById('slides-container');
+            let allContent = portadaGeneral;
+
+            for (const file of slidesFiles) {
+                try {
+                    const response = await fetch(file);
+                    if (response.ok) {
+                        const html = await response.text();
+                        allContent += html;
+                    }
+                } catch (error) {
+                    console.error(`Error cargando ${file}:`, error);
+                }
+            }
+
+            allContent += cierre;
+            container.innerHTML = allContent;
+
+            // Inicializar Reveal.js después de cargar todo
+            Reveal.initialize({
+                width: 1280,
+                height: 720,
+                margin: 0.1,
+                controls: true,
+                progress: true,
+                slideNumber: true,
+                hash: true,
+                center: true,
+                transition: 'slide'
+            });
+        }
+
+        loadSlides();
     </script>
 </body>
 </html>
