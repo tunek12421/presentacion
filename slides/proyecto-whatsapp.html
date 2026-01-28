@@ -1,0 +1,242 @@
+<!-- ==========================================
+     PROYECTO: WhatsApp Universidad
+     Autor: [Nombre del Estudiante]
+     ========================================== -->
+
+<!-- SEPARADOR: Inicio del Proyecto -->
+<section class="proyecto-separador">
+    <div class="proyecto-num">Proyecto 7</div>
+    <h1>WhatsApp Universidad<br>Bot de Atención Estudiantil</h1>
+    <p class="proyecto-autor">Autor: [Nombre del Estudiante]</p>
+</section>
+
+<!-- PORTADA -->
+<section class="portada">
+    <h1>Sistema Automatizado de Atención Estudiantil por WhatsApp con Clasificación por IA</h1>
+    <p class="subtitle">Proyecto de Desarrollo de Software</p>
+</section>
+
+<!-- EL PROBLEMA -->
+<section>
+    <h2>El Problema</h2>
+    <div class="grid-simple">
+        <div class="item-num">
+            <div class="item-num-titulo">Saturación de Consultas</div>
+            <div class="item-num-texto">El número principal de WhatsApp recibe cientos de consultas diarias sin clasificación.</div>
+        </div>
+        <div class="item-num">
+            <div class="item-num-titulo">Redirección Manual</div>
+            <div class="item-num-texto">Personal debe leer cada mensaje y redirigir manualmente al departamento correcto.</div>
+        </div>
+        <div class="item-num">
+            <div class="item-num-titulo">Tiempo de Respuesta</div>
+            <div class="item-num-texto">Estudiantes esperan horas o días para ser atendidos por el área correspondiente.</div>
+        </div>
+        <div class="item-num">
+            <div class="item-num-titulo">Sin Trazabilidad</div>
+            <div class="item-num-texto">No existe registro centralizado de consultas ni estadísticas de atención.</div>
+        </div>
+    </div>
+</section>
+
+<!-- LA SOLUCIÓN -->
+<section>
+    <h2>La Solución</h2>
+    <div class="destacado-central">
+        <p>Bot de WhatsApp que clasifica consultas con IA, recolecta datos del estudiante y lo redirige automáticamente al departamento correspondiente.</p>
+    </div>
+    <div class="grid-simple" style="margin-top: 1.5em;">
+        <div>
+            <h3>Características</h3>
+            <ul>
+                <li>Clasificación IA + keywords</li>
+                <li>5 departamentos configurados</li>
+                <li>Recolección de datos estructurada</li>
+                <li>Dashboard de monitoreo</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Tecnologías</h3>
+            <ul>
+                <li><strong>Runtime:</strong> Node.js + Express</li>
+                <li><strong>WhatsApp:</strong> whatsapp-web.js</li>
+                <li><strong>IA:</strong> OpenAI GPT-4-Mini</li>
+                <li><strong>BD:</strong> SQLite3</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- REDIRECCIÓN A AGENTES -->
+<section>
+    <h2>Redirección a Agentes Administrativos</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1em; margin-top: 1.5em;">
+        <div style="background: #f5f5f5; padding: 1em; border-radius: 4px; border-top: 3px solid #333;">
+            <p style="font-size: 0.75em; font-weight: 600; margin: 0; color: #333;">Consultas Académicas</p>
+            <ul style="font-size: 0.45em; color: #666; margin: 0.5em 0 0 0; padding-left: 1.2em;">
+                <li>Materias y horarios</li>
+                <li>Mallas curriculares</li>
+                <li>Inscripciones</li>
+                <li>Requisitos de carrera</li>
+            </ul>
+        </div>
+        <div style="background: #f5f5f5; padding: 1em; border-radius: 4px; border-top: 3px solid #333;">
+            <p style="font-size: 0.75em; font-weight: 600; margin: 0; color: #333;">Consultas Administrativas</p>
+            <ul style="font-size: 0.45em; color: #666; margin: 0.5em 0 0 0; padding-left: 1.2em;">
+                <li>Pagos y cuotas</li>
+                <li>Certificados y trámites</li>
+                <li>Becas y descuentos</li>
+                <li>Documentación</li>
+            </ul>
+        </div>
+        <div style="background: #f5f5f5; padding: 1em; border-radius: 4px; border-top: 3px solid #333;">
+            <p style="font-size: 0.75em; font-weight: 600; margin: 0; color: #333;">Soporte Técnico</p>
+            <ul style="font-size: 0.45em; color: #666; margin: 0.5em 0 0 0; padding-left: 1.2em;">
+                <li>Plataforma Moodle</li>
+                <li>Acceso a sistemas</li>
+                <li>Problemas técnicos</li>
+                <li>Credenciales</li>
+            </ul>
+        </div>
+    </div>
+    <p style="font-size: 0.55em; color: #666; margin-top: 1.5em; text-align: center;">
+        Cada tipo de consulta se redirige al número de WhatsApp del agente administrativo correspondiente.
+    </p>
+</section>
+
+<!-- FLUJO DE CONVERSACIÓN -->
+<section>
+    <h2>Flujo de Conversación</h2>
+    <div style="display: flex; flex-direction: column; gap: 0.8em; margin-top: 1em; font-size: 0.55em;">
+        <div style="display: flex; align-items: center; gap: 1em;">
+            <div style="background: #e8e8e8; padding: 0.8em 1.2em; border-radius: 15px; max-width: 60%;">
+                <strong>Estudiante:</strong> "Hola, necesito pagar mi mensualidad"
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1em; justify-content: center;">
+            <div style="background: #f5f5f5; padding: 0.5em 1em; border-radius: 4px; border: 1px solid #333;">
+                Bot clasifica → <strong>CAJAS</strong> (keyword: "pagar")
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1em; justify-content: flex-end;">
+            <div style="background: #d4edda; padding: 0.8em 1.2em; border-radius: 15px; max-width: 60%;">
+                <strong>Bot:</strong> "Para conectarte con Cajas, necesito: CI, nombre completo, carrera"
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1em;">
+            <div style="background: #e8e8e8; padding: 0.8em 1.2em; border-radius: 15px; max-width: 60%;">
+                <strong>Estudiante:</strong> "1234567 / Juan Pérez / Ing. Sistemas"
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1em; justify-content: flex-end;">
+            <div style="background: #d4edda; padding: 0.8em 1.2em; border-radius: 15px; max-width: 60%;">
+                <strong>Bot:</strong> "Enlace directo a Cajas: wa.me/591... + Notifica al departamento"
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ARQUITECTURA -->
+<section>
+    <h2>Arquitectura del Sistema</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5em; margin-top: 1.5em;">
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.3em 0; color: #333;">Bot Principal</h3>
+            <p style="font-size: 0.9em; font-weight: 600; margin: 0 0 0.8em 0; color: #333;">src/bot.js</p>
+            <ul style="font-size: 0.5em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>whatsapp-web.js</li>
+                <li>Clasificación híbrida</li>
+                <li>Parseo de datos</li>
+                <li>Anti-bloqueo integrado</li>
+            </ul>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.3em 0; color: #333;">Dashboard</h3>
+            <p style="font-size: 0.9em; font-weight: 600; margin: 0 0 0.8em 0; color: #333;">admin-dashboard.js</p>
+            <ul style="font-size: 0.5em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>Express + Charts</li>
+                <li>Estadísticas en tiempo real</li>
+                <li>Últimos 50 mensajes</li>
+                <li>Tendencias 7 días</li>
+            </ul>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.3em 0; color: #333;">Monitoreo</h3>
+            <p style="font-size: 0.9em; font-weight: 600; margin: 0 0 0.8em 0; color: #333;">monitor.js</p>
+            <ul style="font-size: 0.5em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>Health checks</li>
+                <li>Alertas de fallos</li>
+                <li>Análisis de patrones</li>
+                <li>Logs de actividad</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- SISTEMA ANTI-BLOQUEO -->
+<section>
+    <h2>Sistema Anti-Bloqueo</h2>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5em; margin-top: 1.5em;">
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">Delays Naturales</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Simula tiempo de lectura (1-2s) y escritura (2-8s) basado en longitud del mensaje.</p>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">Rate Limiting</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Máx 60 msgs/día, 15 msgs/hora, 5 msgs/usuario/hora con margen de seguridad.</p>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">Horario de Atención</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Solo responde en horario laboral configurado, reduce patrones detectables.</p>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">Estado "Escribiendo"</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Muestra indicador de escritura proporcional a la longitud de respuesta.</p>
+        </div>
+    </div>
+</section>
+
+<!-- LIMITACIONES Y ALTERNATIVAS -->
+<section>
+    <h2>Estado Actual y Limitaciones</h2>
+    <div class="tabla-2col">
+        <div class="tabla-row">
+            <div class="tabla-cell tabla-cell-left">
+                <h3 style="color: #c0392b;">Limitaciones</h3>
+                <ul style="font-size: 0.55em;">
+                    <li><strong>Emulación WhatsApp Web:</strong> Riesgo latente de bloqueo de número</li>
+                    <li><strong>Sin API oficial:</strong> Falta integración con WhatsApp Business API</li>
+                    <li><strong>Dependencia de sesión:</strong> Requiere escaneo QR periódico</li>
+                </ul>
+            </div>
+            <div class="tabla-cell">
+                <h3 style="color: #27ae60;">Alternativa: Chatfuel</h3>
+                <ul style="font-size: 0.55em;">
+                    <li>Mismo flujo implementado en plataforma de automatización</li>
+                    <li>Sin riesgo de bloqueo (API oficial)</li>
+                    <li><strong>Estado:</strong> Inactivo (pago pendiente)</li>
+                    <li>Listo para activar cuando se requiera</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="destacado-central" style="margin-top: 1em;">
+        <p style="font-size: 0.6em;">Próximo paso: Migrar a WhatsApp Business API oficial para eliminar riesgo de bloqueo.</p>
+    </div>
+</section>
+
+<!-- DEMO / CAPTURAS -->
+<section>
+    <h2>Demostración</h2>
+    <div class="destacado-central">
+        <p>Demo en vivo del sistema</p>
+    </div>
+    <div class="grid-simple" style="margin-top: 1em;">
+        <div style="text-align: center;">
+            <p style="font-size: 0.6em; color: #666;">Dashboard de Estadísticas</p>
+        </div>
+        <div style="text-align: center;">
+            <p style="font-size: 0.6em; color: #666;">Conversación Bot</p>
+        </div>
+    </div>
+</section>
