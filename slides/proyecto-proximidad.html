@@ -1,0 +1,283 @@
+<!-- ==========================================
+     PROYECTO: App Proximidad - Sistema de Pagos BLE
+     Autor: [Nombre del Estudiante]
+     ========================================== -->
+
+<!-- SEPARADOR: Inicio del Proyecto -->
+<section class="proyecto-separador">
+    <div class="proyecto-num">Proyecto 8</div>
+    <h1>App Proximidad<br>Sistema de Pagos por BLE</h1>
+    <p class="proyecto-autor">Autor: [Nombre del Estudiante]</p>
+</section>
+
+<!-- PORTADA -->
+<section class="portada">
+    <h1>Sistema de Pagos por Proximidad para Transporte Público con Bluetooth Low Energy</h1>
+    <p class="subtitle">Proyecto de Desarrollo de Software</p>
+</section>
+
+<!-- EL PROBLEMA -->
+<section>
+    <h2>El Problema</h2>
+    <div class="grid-simple">
+        <div class="item-num">
+            <div class="item-num-titulo">Pagos en Efectivo</div>
+            <div class="item-num-texto">El transporte público depende de efectivo, generando demoras y problemas de cambio.</div>
+        </div>
+        <div class="item-num">
+            <div class="item-num-titulo">Sin Trazabilidad</div>
+            <div class="item-num-texto">No existe registro digital de viajes ni control de ingresos para operadores.</div>
+        </div>
+        <div class="item-num">
+            <div class="item-num-titulo">Fricción en Abordaje</div>
+            <div class="item-num-texto">El proceso de pago manual ralentiza el flujo de pasajeros en horas pico.</div>
+        </div>
+        <div class="item-num">
+            <div class="item-num-titulo">Vulnerabilidad</div>
+            <div class="item-num-texto">El manejo de efectivo expone a conductores y pasajeros a riesgos de seguridad.</div>
+        </div>
+    </div>
+</section>
+
+<!-- LA SOLUCIÓN -->
+<section>
+    <h2>La Solución</h2>
+    <div class="destacado-central">
+        <p>Sistema de pagos contactless mediante Bluetooth Low Energy (BLE) con seguridad criptográfica de nivel bancario para transporte público.</p>
+    </div>
+    <div class="grid-simple" style="margin-top: 1.5em;">
+        <div>
+            <h3>Características</h3>
+            <ul>
+                <li>Pago sin contacto por proximidad</li>
+                <li>Billetera digital con recargas</li>
+                <li>Historial completo de viajes</li>
+                <li>Dashboard de administración</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Tecnologías</h3>
+            <ul>
+                <li><strong>Backend:</strong> Go + Gin + PostgreSQL</li>
+                <li><strong>Mobile:</strong> Android (Java)</li>
+                <li><strong>Comunicación:</strong> BLE 4.0+</li>
+                <li><strong>Seguridad:</strong> ECDSA P-256 + X.509</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- FLUJO DE PAGO -->
+<section>
+    <h2>Flujo de Pago por Proximidad</h2>
+    <div style="display: flex; flex-direction: column; gap: 0.8em; margin-top: 1em; font-size: 0.55em;">
+        <div style="display: flex; align-items: center; gap: 1em;">
+            <div style="background: #e8e8e8; padding: 0.8em 1.2em; border-radius: 15px; max-width: 45%;">
+                <strong>1. Pasajero</strong> abre la app y activa Bluetooth
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1em; justify-content: center;">
+            <div style="background: #f5f5f5; padding: 0.5em 1em; border-radius: 4px; border: 1px solid #333;">
+                BLE detecta dispositivo del chofer (3-5 metros)
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1em; justify-content: flex-end;">
+            <div style="background: #d4edda; padding: 0.8em 1.2em; border-radius: 15px; max-width: 45%;">
+                <strong>2. Chofer</strong> ve solicitud de pago en su app
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1em; justify-content: center;">
+            <div style="background: #f5f5f5; padding: 0.5em 1em; border-radius: 4px; border: 1px solid #333;">
+                Transacción firmada con ECDSA P-256
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1em;">
+            <div style="background: #e8e8e8; padding: 0.8em 1.2em; border-radius: 15px; max-width: 45%;">
+                <strong>3. Confirmación</strong> instantánea en ambos dispositivos
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ARQUITECTURA -->
+<section>
+    <h2>Arquitectura del Sistema</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5em; margin-top: 1.5em;">
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.3em 0; color: #333;">Backend API</h3>
+            <p style="font-size: 0.9em; font-weight: 600; margin: 0 0 0.8em 0; color: #333;">Go + Gin Framework</p>
+            <ul style="font-size: 0.5em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>REST API documentada</li>
+                <li>PostgreSQL + GORM</li>
+                <li>JWT Authentication</li>
+                <li>Validación de firmas ECDSA</li>
+            </ul>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.3em 0; color: #333;">App Cliente</h3>
+            <p style="font-size: 0.9em; font-weight: 600; margin: 0 0 0.8em 0; color: #333;">Android (Java)</p>
+            <ul style="font-size: 0.5em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>BLE Scanner/Advertiser</li>
+                <li>Billetera digital</li>
+                <li>Historial de viajes</li>
+                <li>Recarga de saldo</li>
+            </ul>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-top: 3px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.3em 0; color: #333;">App Chofer</h3>
+            <p style="font-size: 0.9em; font-weight: 600; margin: 0 0 0.8em 0; color: #333;">Android (Java)</p>
+            <ul style="font-size: 0.5em; margin: 0; padding-left: 1.2em; color: #555;">
+                <li>BLE Peripheral Mode</li>
+                <li>Recepción de pagos</li>
+                <li>Dashboard de ingresos</li>
+                <li>Gestión de rutas</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- SEGURIDAD CRIPTOGRÁFICA -->
+<section>
+    <h2>Seguridad Criptográfica</h2>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5em; margin-top: 1.5em;">
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">ECDSA P-256</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Firma digital de curva elíptica. Cada transacción es firmada criptográficamente para garantizar autenticidad.</p>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">Certificados X.509</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Infraestructura PKI completa para verificación de identidad de dispositivos y usuarios.</p>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">Android Keystore</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Claves privadas almacenadas en hardware seguro del dispositivo, protegidas por biometría.</p>
+        </div>
+        <div style="background: #f5f5f5; padding: 1.2em; border-radius: 4px; border-left: 4px solid #333;">
+            <h3 style="font-size: 0.75em; margin: 0 0 0.5em 0; color: #333; font-weight: 600;">JWT + Refresh Tokens</h3>
+            <p style="font-size: 0.55em; margin: 0; color: #555;">Autenticación stateless con tokens de corta duración y rotación automática de credenciales.</p>
+        </div>
+    </div>
+</section>
+
+<!-- COMUNICACIÓN BLE -->
+<section>
+    <h2>Comunicación Bluetooth Low Energy</h2>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2em; margin-top: 1.5em;">
+        <div>
+            <h3 style="font-size: 0.7em; color: #333;">Protocolo</h3>
+            <ul style="font-size: 0.55em; margin-top: 0.5em;">
+                <li><strong>GATT Server:</strong> App Chofer actúa como periférico</li>
+                <li><strong>GATT Client:</strong> App Cliente escanea y conecta</li>
+                <li><strong>UUID Servicio:</strong> Identificador único del sistema</li>
+                <li><strong>Características:</strong> Read/Write/Notify</li>
+            </ul>
+        </div>
+        <div>
+            <h3 style="font-size: 0.7em; color: #333;">Ventajas BLE</h3>
+            <ul style="font-size: 0.55em; margin-top: 0.5em;">
+                <li>Bajo consumo energético</li>
+                <li>No requiere internet para transacción</li>
+                <li>Alcance controlado (3-5 metros)</li>
+                <li>Compatible con Android 5.0+</li>
+            </ul>
+        </div>
+    </div>
+    <div class="destacado-central" style="margin-top: 1.5em;">
+        <p style="font-size: 0.6em;">Las transacciones se sincronizan con el servidor cuando hay conectividad disponible.</p>
+    </div>
+</section>
+
+<!-- MÓDULOS DEL SISTEMA -->
+<section>
+    <h2>Módulos del Sistema</h2>
+    <div class="tabla-2col">
+        <div class="tabla-row">
+            <div class="tabla-cell tabla-cell-left">
+                <h3>Gestión de Usuarios</h3>
+                <ul style="font-size: 0.5em;">
+                    <li>Registro con verificación</li>
+                    <li>Roles: Cliente, Chofer, Admin</li>
+                    <li>Perfil y configuración</li>
+                    <li>Recuperación de cuenta</li>
+                </ul>
+            </div>
+            <div class="tabla-cell">
+                <h3>Gestión Financiera</h3>
+                <ul style="font-size: 0.5em;">
+                    <li>Billetera digital por usuario</li>
+                    <li>Recargas y transferencias</li>
+                    <li>Historial de transacciones</li>
+                    <li>Reportes de ingresos</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="tabla-2col" style="margin-top: 1em;">
+        <div class="tabla-row">
+            <div class="tabla-cell tabla-cell-left">
+                <h3>Gestión de Rutas</h3>
+                <ul style="font-size: 0.5em;">
+                    <li>CRUD de rutas y tarifas</li>
+                    <li>Asignación chofer-ruta</li>
+                    <li>Paradas y horarios</li>
+                </ul>
+            </div>
+            <div class="tabla-cell">
+                <h3>Panel Administrativo</h3>
+                <ul style="font-size: 0.5em;">
+                    <li>Dashboard de métricas</li>
+                    <li>Gestión de vehículos</li>
+                    <li>Auditoría de operaciones</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ESTADO Y PRÓXIMOS PASOS -->
+<section>
+    <h2>Estado Actual y Próximos Pasos</h2>
+    <div class="tabla-2col">
+        <div class="tabla-row">
+            <div class="tabla-cell tabla-cell-left">
+                <h3 style="color: #27ae60;">Completado</h3>
+                <ul style="font-size: 0.55em;">
+                    <li>Backend API REST completa</li>
+                    <li>Modelo de datos PostgreSQL</li>
+                    <li>Sistema de autenticación JWT</li>
+                    <li>Firma y verificación ECDSA</li>
+                    <li>Estructura apps Android</li>
+                </ul>
+            </div>
+            <div class="tabla-cell">
+                <h3 style="color: #e67e22;">En Desarrollo</h3>
+                <ul style="font-size: 0.55em;">
+                    <li>Integración BLE completa</li>
+                    <li>UI/UX apps móviles</li>
+                    <li>Sincronización offline</li>
+                    <li>Panel web administrativo</li>
+                    <li>Pruebas de campo</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="destacado-central" style="margin-top: 1em;">
+        <p style="font-size: 0.6em;">Próximo hito: Prueba piloto con línea de transporte local.</p>
+    </div>
+</section>
+
+<!-- DEMO / CAPTURAS -->
+<section>
+    <h2>Demostración</h2>
+    <div class="destacado-central">
+        <p>Demo en vivo del sistema</p>
+    </div>
+    <div class="grid-simple" style="margin-top: 1em;">
+        <div style="text-align: center;">
+            <p style="font-size: 0.6em; color: #666;">App Cliente - Billetera</p>
+        </div>
+        <div style="text-align: center;">
+            <p style="font-size: 0.6em; color: #666;">App Chofer - Recepción</p>
+        </div>
+    </div>
+</section>
