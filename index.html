@@ -20,16 +20,26 @@
 
     <script src="dist/reveal.js"></script>
     <script>
-        // Archivos de slides a cargar (agregar más aquí)
-        const slidesFiles = [
-            'slides/proyecto-llaves.html',
-            'slides/proyecto-academy.html',
-            'slides/proyecto-certificados.html',
-            'slides/proyecto-nasa.html',
-            'slides/sistema-biblioteca.html',
-            // 'slides/proyecto-2.html',
-            // 'slides/proyecto-3.html',
-            // 'slides/proyecto-4.html',
+        // Proyectos organizados por sección
+        const secciones = [
+            {
+                titulo: 'Proyectos Realizados',
+                subtitulo: 'Sistemas completados y en producción',
+                proyectos: [
+                    'slides/proyecto-llaves.html',
+                    'slides/proyecto-academy.html',
+                    'slides/proyecto-certificados.html',
+                    'slides/proyecto-nasa.html',
+                ]
+            },
+            {
+                titulo: 'Proyectos en Desarrollo',
+                subtitulo: 'Sistemas en fase de implementación',
+                proyectos: [
+                    'slides/sistema-biblioteca.html',
+                    // Agregar más proyectos en desarrollo aquí
+                ]
+            }
         ];
 
         // Portada general
@@ -38,6 +48,14 @@
                 <div class="proyecto-num">Universidad Privada Domingo Savio - UPDS</div>
                 <h1>Proyectos de<br>Desarrollo de Software</h1>
                 <p class="proyecto-autor">Gestión 2025 - Cochabamba, Bolivia</p>
+            </section>
+        `;
+
+        // Separador de sección
+        const crearSeparadorSeccion = (titulo, subtitulo) => `
+            <section class="proyecto-separador" style="background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);">
+                <h1 style="color: white; font-size: 2.5em;">${titulo}</h1>
+                <p class="proyecto-autor" style="color: rgba(255,255,255,0.8);">${subtitulo}</p>
             </section>
         `;
 
@@ -53,15 +71,21 @@
             const container = document.getElementById('slides-container');
             let allContent = portadaGeneral;
 
-            for (const file of slidesFiles) {
-                try {
-                    const response = await fetch(file);
-                    if (response.ok) {
-                        const html = await response.text();
-                        allContent += html;
+            for (const seccion of secciones) {
+                // Agregar separador de sección
+                allContent += crearSeparadorSeccion(seccion.titulo, seccion.subtitulo);
+
+                // Cargar proyectos de esta sección
+                for (const file of seccion.proyectos) {
+                    try {
+                        const response = await fetch(file);
+                        if (response.ok) {
+                            const html = await response.text();
+                            allContent += html;
+                        }
+                    } catch (error) {
+                        console.error(`Error cargando ${file}:`, error);
                     }
-                } catch (error) {
-                    console.error(`Error cargando ${file}:`, error);
                 }
             }
 
